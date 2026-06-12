@@ -1,5 +1,7 @@
 # Efficient Inference for Pythia-70M
 
+Repository: https://github.com/Amanda302617/efficient-llm-inference-pythia70m
+
 This repository is a course project for training-free language model inference optimization on `EleutherAI/pythia-70m`.
 
 The implemented method is a StreamingLLM-style KV cache eviction policy. It keeps attention sink tokens plus a recent window, and drops the middle historical KV cache during autoregressive decoding. The model is not trained and its parameters are not modified.
